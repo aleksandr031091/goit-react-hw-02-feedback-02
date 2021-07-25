@@ -1,0 +1,15 @@
+.button {
+  padding: 5px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+}
+.button:hover,
+:focus {
+  background-color: skyblue;
+  border: 1px solid blue;
+}
+.button:not(:last-child) {
+  margin-right: 10px;
+}
