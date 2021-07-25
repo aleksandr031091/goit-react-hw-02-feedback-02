@@ -1,4 +1,5 @@
 import React from "react";
+import ProtoType from "prop-types";
 import { v4 as uuidv4 } from "uuid";
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
@@ -19,3 +20,8 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 };
 
 export default FeedbackOptions;
+
+FeedbackOptions.prototype = {
+  options: ProtoType.array.isRequired,
+  onLeaveFeedback: ProtoType.func.isRequired,
+};
